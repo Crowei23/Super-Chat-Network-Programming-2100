@@ -73,19 +73,16 @@ class ChatApp:
         threading.Thread(target=self.receive, daemon=True).start()
 
         self.root.mainloop() # Main loop in which the GUI is mantain and run
-
+    
+    
+    # @version 1.2 Method used to implement every button. But with the pass it automatically changes in size. 
+    
     def resize(self, event):
         # Adjust widget positions on window resize
         # Calculate new sizes based on 80% of the window's width and height
         # Sizes are relatives
         # If the windows is 1000 X 1000 pixels  wide then elements will be spread 800 pixels across
-        self.chat_label.place_configure(relx=0.25, rely=0.05, relwidth=0.5)
-        self.logout_button.place_configure(relx=0.85, rely=0.02, relwidth=0.1)
-        self.chat_area.place_configure(relwidth=0.8, relheight=0.5, relx=0.1)
-        self.plus_button.place_configure(relx=0.15, rely=0.77, relwidth=0.08, relheight=0.05)
-        self.msg_label.place_configure(relwidth=0.8, relx=0.1)
-        self.input_area.place_configure(relwidth=0.5, relx=0.25)
-        self.send_button.place_configure(relx=0.8, relwidth=0.15)
+        pass;
 
 
     def open_image(self):
